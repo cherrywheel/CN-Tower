@@ -1,3 +1,4 @@
+--- START OF FILE lgbtq_mode.txt ---
 {
     "base":{
         "You're at the base of the CN Tower. It's huge!": "Aww, sweetie, you're at the base of the CN Tower! It's so wonderful!",
@@ -10,56 +11,56 @@
     },
     "alex_rivers": {
         "You go to the person. They say their name is Alex Rivers.": "You go to the person! They introduce themselves as Alex Rivers, what a sweetie!",
-        '"Hey! Nice day to visit the CN Tower, right?"': '"Hiya, darling! Isn\'t today just an amazing day to visit the CN Tower?"',
-        'Alex checks their watch. "It\'s 17:46. I have 5 minutes to record a video for my social media channel."': 'Alex checks their watch and says: "Oh my gosh, darling! It\'s 17:46! I have like 5 minutes to make an amazing video for my social media channel"',
+        "\"Hey! Nice day to visit the CN Tower, right?\"": "\"Hiya, darling! Isn't today just an amazing day to visit the CN Tower?\"",
+        "Alex checks their watch. \"It's 17:46. I have 5 minutes to record a video for my social media channel.\"": "Alex checks their watch and says: \"Oh my gosh, darling! It's 17:46! I have like 5 minutes to make an amazing video for my social media channel\"",
         "Alex talks a lot about the weather, the view, and their love for the CN Tower.": "Alex is just talking about how pretty the view is and how much they love the CN Tower! They are so passionate!",
         "...blah, blah, blah! ({5-i} minutes)": "...blah, blah, blah! ({5-i} minutes)... they seem so passionate!",
         "...Alex looks at their watch.": "...Alex looks at their watch and seems startled, oh no, darling!",
-        '"Oh no! I lost track of time. Gotta run!"': '"Oh no, sweetie! I have to go now!"',
+        "\"Oh no! I lost track of time. Gotta run!\"": "\"Oh no, sweetie! I have to go now!\"",
         "You wasted a lot of time.": "You spent a lot of time talking, darling, hehe.",
         "You continue your tour.": "You continue your wonderful adventure, cutie!",
         "Also, you don't have much time, so you didn't buy a ticket.": "Also, you don't have much time, so you didn't get a ticket yet, darling.",
-        "It's Alex Rivers again. Still talking about the CN Tower.":"Oh, it's Alex Rivers again! They still seem obsessed with this tower, oh my!",
-         'Alex: "Oh, it\'s you! Enjoying the tower? It\'s great, right?"': 'Alex: "Oh hey again, sweetie! Are you having fun exploring the tower? It\'s beautiful, isn\'t it?"',
-          "What do you want to do?":"What would you like to do, cutie?",
-         "This tower is truly a marvel of engineering!":"This tower is such a marvel of engineering, wow!",
-         "The view from up here is absolutely breathtaking!":"The view from up here is absolutely stunning, darling!",
+        "It's Alex Rivers again. Still talking about the CN Tower.": "Oh, it's Alex Rivers again! They still seem obsessed with this tower, oh my!",
+         "Alex: \"Oh, it's you! Enjoying the tower? It's great, right?\"": "Alex: \"Oh hey again, sweetie! Are you having fun exploring the tower? It's beautiful, isn't it?\"",
+          "What do you want to do?": "What would you like to do, cutie?",
+         "This tower is truly a marvel of engineering!": "This tower is such a marvel of engineering, wow!",
+         "The view from up here is absolutely breathtaking!": "The view from up here is absolutely stunning, darling!",
          "You're doing a great job promoting this place, Alex!": "You're doing such a great job at promoting this place, Alex! You are amazing!",
-          "I've never seen anything like this before!":"I have never seen something like this before, what a wonderful view!",
-        "This is the best day of my life!":"This is the best day ever, sweetie!",
-       'Alex: "Wow, you think so? That\'s awesome! Here, take $40. Also i\'ll give you a ticket and a mask"': 'Alex: "Aww, you think so, darling? That\'s amazing! Take $40 and here, a ticket and a mask, sweetie!"',
-       'Alex: "Thanks! Every little bit helps."': 'Alex: "Thank you, sweetie! It means a lot."',
+          "I've never seen anything like this before!": "I have never seen something like this before, what a wonderful view!",
+        "This is the best day of my life!": "This is the best day ever, sweetie!",
+       "Alex: \"Wow, you think so? That's awesome! Here, take $40. Also i'll give you a ticket and a mask\"": "Alex: \"Aww, you think so, darling? That's amazing! Take $40 and here, a ticket and a mask, sweetie!\"",
+       "Alex: \"Thanks! Every little bit helps.\"": "Alex: \"Thank you, sweetie! It means a lot.\"",
         "Hints: 'Compliment Alex', 'Ignore', 'Exit', 'Restart'.": "Hints, my darling! 'Compliment Alex', 'Ignore', 'Exit', 'Restart'. What are you gonna choose?"
     },
     "marat": {
        "You go to the strange guy. He says his name is Marat.": "You go to the friendly person! They introduce themselves as Marat, what a cutie!",
-        '"Hey! You look like you\'ve got energy. Join our quadrobics club?"': '"Hi, darling! You seem so energetic! Do you wanna join our quadrobics group, sweetie?"',
+        "\"Hey! You look like you've got energy. Join our quadrobics club?\"": "\"Hi, darling! You seem so energetic! Do you wanna join our quadrobics group, sweetie?\"",
          "Marat shows some quadrobics moves.": "Marat shows you some quadrobics moves, very cool, darling!",
         "What do you want to do?": "What would you like to do, darling?",
          "Hints: 'Join', 'Decline', 'Back', 'Exit', 'Restart'.": "Hints, sweetie! 'Join', 'Decline', 'Back', 'Exit', 'Restart'. Your move!"
     },
     "entrance": {
-        "You're at the entrance. There's a long line for tickets.":"You are at the entrance, sweetie, so many people are waiting for tickets!",
-         "You have a ticket! Go to security check (North).":"You have a ticket, amazing! Go straight to security check to the north, cutie!",
+        "You're at the entrance. There's a long line for tickets.": "You are at the entrance, sweetie, so many people are waiting for tickets!",
+         "You have a ticket! Go to security check (North).": "You have a ticket, amazing! Go straight to security check to the north, cutie!",
         "You need a ticket. Buy one at the ticket booth (West).": "You need a ticket, sweetie! Go buy it at the ticket booth to the west!",
-        "What do you want to do?":"So, sweetie? What would you like to do?",
+        "What do you want to do?": "So, sweetie? What would you like to do?",
         "Hints: 'Go North' (with ticket), 'Go West', 'Back', 'Exit', 'Restart'.": "Hints, cutie! 'Go North' (with ticket), 'Go West', 'Back', 'Exit', 'Restart'. Your choice!"
     },
     "ticket_booth": {
         "You're at the ticket booth. Tickets are $40.": "You are at the ticket booth, sweetie! Tickets are $40.",
         "What do you want to do?": "What would you like to do, darling?",
-         "Hints: 'Buy Ticket', 'Back', 'Exit', 'Restart'." : "Hints, sweetie! 'Buy Ticket', 'Back', 'Exit', 'Restart'. What are we buying?"
+         "Hints: 'Buy Ticket', 'Back', 'Exit', 'Restart'.": "Hints, sweetie! 'Buy Ticket', 'Back', 'Exit', 'Restart'. What are we buying?"
     },
     "security": {
-       "You're at the security check. They're checking bags and tickets.":"You are at the security check! They are checking all bags and tickets, sweetie!",
+       "You're at the security check. They're checking bags and tickets.": "You are at the security check! They are checking all bags and tickets, sweetie!",
         "The guard checks your ticket and lets you through to the elevator (North).": "The guard checks your ticket and allows you to pass to the elevator to the north, cutie!",
-         "You need a ticket to go through.":"You need a ticket to go through, darling!",
+         "You need a ticket to go through.": "You need a ticket to go through, darling!",
           "What do you want to do?": "What's your next move, darling?",
-         "Hints: 'Go North' (with ticket), 'Back', 'Exit', 'Restart'." : "Hints, sweetie! 'Go North' (with ticket), 'Back', 'Exit', 'Restart'. So?"
+         "Hints: 'Go North' (with ticket), 'Back', 'Exit', 'Restart'.": "Hints, sweetie! 'Go North' (with ticket), 'Back', 'Exit', 'Restart'. So?"
     },
      "elevator": {
-          "You're in the elevator. The doors close.":"You are in the elevator and the doors are closing, sweetie!",
-        "Going up fast...":"Going upppp, cutie!",
+          "You're in the elevator. The doors close.": "You are in the elevator and the doors are closing, sweetie!",
+        "Going up fast...": "Going upppp, cutie!",
         "Your ears pop.": "Your ears are popping, darling!",
          "Ding! LookOut level.": "Ding! You are at the LookOut level, sweetie!"
     },
@@ -67,7 +68,7 @@
         "You're on the LookOut level! Great view of Toronto.": "You made it to the LookOut level, darling! The view of Toronto is astonishing!",
         "You see the city, the lake, and Niagara Falls far away.": "You can see the city, the lake, and if you look far enough, Niagara Falls, cutie!",
          "Stairs to Glass Floor (Down). Info booth (East).": "Stairs to the Glass Floor are to the south! The info booth is to the east, sweetie!",
-        "What do you want to do?":"What do you wanna explore, darling?",
+        "What do you want to do?": "What do you wanna explore, darling?",
          "Hints: 'Go Down', 'Go East', 'Look Around', 'Exit', 'Restart'.": "Hints, cutie! 'Go Down', 'Go East', 'Look Around', 'Exit', 'Restart'. What do you wanna do next?"
     },
     "glass_floor":{
@@ -78,95 +79,95 @@
          "Hints: 'Go Up', 'Go West', 'Look Down', 'Exit', 'Restart'.": "Hints, sweetie! 'Go Up', 'Go West', 'Look Down', 'Exit', 'Restart'. Your choice?"
     },
      "edgewalk_registration":{
-         "You're at the EdgeWalk desk.":"You have arrived at the EdgeWalk desk, my darling!",
+         "You're at the EdgeWalk desk.": "You have arrived at the EdgeWalk desk, my darling!",
         "You have a ticket! The guide is preparing the gear (North).": "You have a ticket, amazing! The guide is preparing the gear to the north, sweetie!",
-         "You need a ticket for EdgeWalk. It's $195. Buy one here.":"You need a ticket for the EdgeWalk, it's $195, darling! Buy one here!",
+         "You need a ticket for EdgeWalk. It's $195. Buy one here.": "You need a ticket for the EdgeWalk, it's $195, darling! Buy one here!",
         "What do you want to do?": "What are we choosing next, cutie?",
          "Hints: 'Buy Ticket', 'Go North' (with ticket), 'Back', 'Exit', 'Restart'.": "Hints, sweetie! 'Buy Ticket', 'Go North' (with ticket), 'Back', 'Exit', 'Restart'. So what do you wanna do?"
     },
     "edgewalk_preparation":{
-       "You're in the EdgeWalk prep area. The guide helps you put on a harness.":"You are in the EdgeWalk preparation area, my darling! The guide is helping you put on the harness!",
-        "You're excited and nervous.":"You are excited and nervous, this is really happening, cutie!",
+       "You're in the EdgeWalk prep area. The guide helps you put on a harness.": "You are in the EdgeWalk preparation area, my darling! The guide is helping you put on the harness!",
+        "You're excited and nervous.": "You are excited and nervous, this is really happening, cutie!",
         "The guide checks your harness. Thumbs up!": "The guide checks your harness! Thumbs up, let's go, sweetie!"
     },
     "edgewalk":{
         "You're outside on the EdgeWalk! Wind is blowing. You're walking around the CN Tower!": "You are outside on the EdgeWalk, the wind is blowing! You are walking around the CN Tower, darling!",
-       "It's the most exciting thing ever!":"This is the most exciting thing ever, cutie!",
+       "It's the most exciting thing ever!": "This is the most exciting thing ever, cutie!",
         "Congrats! You did the EdgeWalk! (Win)": "Congratulations, darling! You did the EdgeWalk! (Win), you did it!"
     },
     "gift_shop":{
-        "You're in the gift shop. They have souvenirs, postcards, and CN Tower stuff.":"You are in the gift shop, sweetie! They sell souvenirs, postcards, and cool CN Tower things!",
-        "You see a disguise kit for $20.":"You see a disguise kit here that is $20, my darling!",
-        "What do you want to do?":"What are you gonna choose, sweetie?",
-         "Hints: 'Buy Postcards', 'Buy Souvenir', 'Buy Mask' (with enough money), 'Back', 'Exit', 'Restart'.":"Hints, darling! 'Buy Postcards', 'Buy Souvenir', 'Buy Mask' (with enough money), 'Back', 'Exit', 'Restart'. What are we buying?"
+        "You're in the gift shop. They have souvenirs, postcards, and CN Tower stuff.": "You are in the gift shop, sweetie! They sell souvenirs, postcards, and cool CN Tower things!",
+        "You see a disguise kit for $20.": "You see a disguise kit here that is $20, my darling!",
+        "What do you want to do?": "What are you gonna choose, sweetie?",
+         "Hints: 'Buy Postcards', 'Buy Souvenir', 'Buy Mask' (with enough money), 'Back', 'Exit', 'Restart'.": "Hints, darling! 'Buy Postcards', 'Buy Souvenir', 'Buy Mask' (with enough money), 'Back', 'Exit', 'Restart'. What are we buying?"
     },
      "information_booth":{
-         "You're at the info booth. Brochures about the CN Tower are here.":"You are at the info booth, my sweetie. There are brochures about the CN Tower here!",
-         "A staff member is answering questions.":"A staff member is here, darling, ready to answer all the questions!",
+         "You're at the info booth. Brochures about the CN Tower are here.": "You are at the info booth, my sweetie. There are brochures about the CN Tower here!",
+         "A staff member is answering questions.": "A staff member is here, darling, ready to answer all the questions!",
           "What do you want to do?": "What do you want to do, cutie?",
-         "Hints: 'Ask About History', 'Ask About Building', 'Back', 'Exit', 'Restart'.":"Hints, darling! 'Ask About History', 'Ask About Building', 'Back', 'Exit', 'Restart'. What do you wanna know?"
+         "Hints: 'Ask About History', 'Ask About Building', 'Back', 'Exit', 'Restart'.": "Hints, darling! 'Ask About History', 'Ask About Building', 'Back', 'Exit', 'Restart'. What do you wanna know?"
     },
     "worker": {
         "You go to the worker. He looks tired.": "You walk to the worker, they seem very tired, sweetie.",
-         '"Hey, can you help me? I need to move these boxes to the storage room."':'"Hi, cutie, can you help me? I need to get these boxes to the storage room."',
+         "\"Hey, can you help me? I need to move these boxes to the storage room.\"": "\"Hi, cutie, can you help me? I need to get these boxes to the storage room.\"",
          "You start helping.": "You are now helping out, amazing!",
-          "You carry box {i} to the storage room...":"You carry box {i} to the storage room...",
+          "You carry box {i} to the storage room...": "You carry box {i} to the storage room...",
         "You pick up the 5th box. It's open a bit.": "You pick up the 5th box, it seems open a bit, darling!",
          "What do you want to do?": "What are you going to do, darling?",
-         "Hints: 'Look Inside', 'Continue', 'Exit', 'Restart'." : "Hints, sweetie! 'Look Inside', 'Continue', 'Exit', 'Restart'. So?"
+         "Hints: 'Look Inside', 'Continue', 'Exit', 'Restart'.": "Hints, sweetie! 'Look Inside', 'Continue', 'Exit', 'Restart'. So?"
     },
      "open_box":{
-         "You look inside. You see money, a book, and a mask.":"You look inside, cutie! You can see money, a book, and a mask.",
+         "You look inside. You see money, a book, and a mask.": "You look inside, cutie! You can see money, a book, and a mask.",
         "What do you want to do?": "What's your choice, sweetie?",
          "Hints: 'Take Nothing', 'Take Money', 'Take Book', 'Take Mask', 'Exit', 'Restart'.": "Hints, darling! 'Take Nothing', 'Take Money', 'Take Book', 'Take Mask', 'Exit', 'Restart'. What will you do?"
     },
     "caught_stealing":{
         "The worker sees you!": "Oh no, darling! The worker sees you!",
-        'Worker: "Hey! What are you doing?!"': 'Worker: "Hey, sweetie! What do you think you are doing?!"',
+        "Worker: \"Hey! What are you doing?!\"": "Worker: \"Hey, sweetie! What do you think you are doing?!\"",
         "He calls security. You're taken to the police.": "He calls security. You are being taken to the police, sweetie!",
-         "What do you want to do?":"What now, darling?",
+         "What do you want to do?": "What now, darling?",
          "Hints: 'Tell Truth', 'Bribe', 'Lie', 'Exit', 'Restart'.": "Hints, darling! 'Tell Truth', 'Bribe', 'Lie', 'Exit', 'Restart'. Your move!"
     },
      "police_station":{
         "You're at the police station. The officer is asking you questions.": "You are now at the police station, the officer is asking you all the questions, darling!",
          "What do you want to do?": "What now, sweetie?",
-         "Hints: 'Tell Truth', 'Bribe', 'Lie', 'Exit', 'Restart'.":"Hints, cutie! 'Tell Truth', 'Bribe', 'Lie', 'Exit', 'Restart'. What do you choose?"
+         "Hints: 'Tell Truth', 'Bribe', 'Lie', 'Exit', 'Restart'.": "Hints, cutie! 'Tell Truth', 'Bribe', 'Lie', 'Exit', 'Restart'. What do you choose?"
     },
      "storage_room":{
-         "You're in the storage room with the worker.":"You are in the storage room with the worker, sweetie!",
-          'Worker: "Thanks a lot! Here\'s $20."': 'Worker: "Thank you, darling! Here is $20!"',
-          "You got $20.":"You get $20, amazing!",
+         "You're in the storage room with the worker.": "You are in the storage room with the worker, sweetie!",
+          "Worker: \"Thanks a lot! Here's $20.\"": "Worker: \"Thank you, darling! Here is $20!\"",
+          "You got $20.": "You get $20, amazing!",
          "What do you want to do?": "So what next, darling?",
-          "Hints: 'Back', 'Exit', 'Restart'.":"Hints, sweetie! 'Back', 'Exit', 'Restart'. What are we choosing?"
+          "Hints: 'Back', 'Exit', 'Restart'.": "Hints, sweetie! 'Back', 'Exit', 'Restart'. What are we choosing?"
         },
         "just_a_chill_guy":{
-            "You see Just a Chill Guy. He's laughing, looking at a corner.":"You can see Just a Chill Guy! They are laughing while looking at a corner, darling.",
-            "You have a mask and a Bible. You're ready to scare Alex Rivers!":"You have the mask and the Bible, you are ready to scare Alex Rivers, amazing!",
-            'Just a Chill Guy: "Now that the quadrobists ran away, you can scare Alex using the mask."':'Just a Chill Guy says: "Now that the quadrobists are gone, you can scare Alex with the mask, sweetie!"',
-           'Just a Chill Guy: "You scared the quadrobists good, now you can scare Alex."':'Just a Chill Guy says: "You have scared the quadrobists! Now go scare Alex, friend!"',
+            "You see Just a Chill Guy. He's laughing, looking at a corner.": "You can see Just a Chill Guy! They are laughing while looking at a corner, darling.",
+            "You have a mask and a Bible. You're ready to scare Alex Rivers!": "You have the mask and the Bible, you are ready to scare Alex Rivers, amazing!",
+            "Just a Chill Guy: \"Now that the quadrobists ran away, you can scare Alex using the mask.\"": "Just a Chill Guy says: \"Now that the quadrobists are gone, you can scare Alex with the mask, sweetie!\"",
+           "Just a Chill Guy: \"You scared the quadrobists good, now you can scare Alex.\"": "Just a Chill Guy says: \"You have scared the quadrobists! Now go scare Alex, friend!\"",
             "What do you want to do?": "What do you wanna do, darling?",
               "Hints: 'Use Mask', 'Go Forward', 'Ask About Corner', 'Back', 'Exit', 'Restart'.": "Hints, sweetie! 'Use Mask', 'Go Forward', 'Ask About Corner', 'Back', 'Exit', 'Restart'. What are you deciding?"
         },
         "corner":{
-            "You use your mask and peek around the corner. You see quadrobists practicing.":"You use the mask and look around the corner, you see the quadrobists practicing, cutie.",
+            "You use your mask and peek around the corner. You see quadrobists practicing.": "You use the mask and look around the corner, you see the quadrobists practicing, cutie.",
             "They don't see you. You go back to Just a Chill Guy.": "They don't see you! You go back to Just a Chill Guy, darling!",
              "You go to the corner, and quadrobists see you!": "You go to the corner and the quadrobists see you, darling!",
-            "They make you join their quadrobics training.":"They make you join their quadrobics training now, sweetie!",
+            "They make you join their quadrobics training.": "They make you join their quadrobics training now, sweetie!",
             "Now you're a quadrobist. You must scare Alex Rivers.": "You are now a quadrobist! You have to go scare Alex Rivers, darling!"
         },
         "quadrobics_base":{
-            "You move like a quadrobist. Alex is West.":"You are now moving like a quadrobist, Alex is to the west, darling!",
-            "Hints: 'Go West', 'Exit', 'Restart'.":"Hints, cutie! 'Go West', 'Exit', 'Restart'. So what's next?"
+            "You move like a quadrobist. Alex is West.": "You are now moving like a quadrobist, Alex is to the west, darling!",
+            "Hints: 'Go West', 'Exit', 'Restart'.": "Hints, cutie! 'Go West', 'Exit', 'Restart'. So what's next?"
         },
           "scare_alex":{
-              "You successfully scared Alex Rivers using the mask and the Bible!":"You have successfully scared Alex Rivers using the mask and the Bible, amazing!",
+              "You successfully scared Alex Rivers using the mask and the Bible!": "You have successfully scared Alex Rivers using the mask and the Bible, amazing!",
              "Alex runs away, dropping their phone. You see your chance!": "Alex runs away, dropping their phone! You see your chance to get their phone, sweetie!",
-             "Hints: 'Take Phone', 'Leave Phone', 'Exit', 'Restart'":"Hints, darling! 'Take Phone', 'Leave Phone', 'Exit', 'Restart'. What are you choosing?"
+             "Hints: 'Take Phone', 'Leave Phone', 'Exit', 'Restart'": "Hints, darling! 'Take Phone', 'Leave Phone', 'Exit', 'Restart'. What are you choosing?"
         },
         "phone_found":{
             "You take the phone and run to the edge of the roof. There are no obstacles in front of you.": "You take the phone and run to the edge of the roof, you can see no obstacles in front of you, sweetie.",
             "What do you want to do?": "What are you going to do, cutie?",
-             "Hints: 'Jump', 'Go Back' to the Glass Floor, 'Exit', 'Restart'":"Hints, darling! 'Jump', 'Go Back' to the Glass Floor, 'Exit', 'Restart'. What's the move?"
+             "Hints: 'Jump', 'Go Back' to the Glass Floor, 'Exit', 'Restart'": "Hints, darling! 'Jump', 'Go Back' to the Glass Floor, 'Exit', 'Restart'. What's the move?"
         },
         "roof":{
              "You jumped from the roof. The last thing you see is blue sky": "You jumped from the roof, the last thing you see is the beautiful blue sky, sweetie."
