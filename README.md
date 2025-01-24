@@ -2,7 +2,7 @@
 
 ## Disclaimer
 
-This game is a work of fiction created solely for entertainment purposes. The characters, events, and settings depicted in this game, including references to the CN Tower, "Alex Rivers", "Quadrobers," and "Patrick" are entirely fictional.
+This game is a work of fiction created solely for entertainment purposes. The characters, events, and settings depicted in this game, including references to the CN Tower, "Quadrobers," and "Patrick" are entirely fictional.
 
 Any resemblance to real persons, living or deceased, or actual events, locations, or entities is purely coincidental. The developer does not intend to offend, harm, or misrepresent any individuals, groups, or organizations.
 
@@ -10,11 +10,11 @@ Any resemblance to real persons, living or deceased, or actual events, locations
 
 This game is intended for players aged **16 and above**. By playing this game, you confirm that you meet the age requirement.
 
-## Sweet Mode
+## Sweet+ Mode (Optional LGBTQ+ Mode)
 
-The game includes an optional LGBTQ+ mode (referred to as "sweet+" mode in the code), which is available in regions where such content is legally permitted. This mode is designed to provide an inclusive experience for all players and is entirely optional. It can be toggled on or off in the debug menu.
+The game includes an optional "sweet+" mode (referred to as such in the code), which provides an alternative, more inclusive tone to the game's dialogue. This mode is designed to be humorous and is available in regions where such content is legally permitted. It can be toggled on or off in the debug menu.
 
-**Please note:** In countries where LGBTQ+ content is restricted or illegal, the "sweet+" mode will be automatically disabled and removed from the debug menu.
+**Please note:** In countries where this content might be restricted, the "sweet+" mode is automatically disabled and removed from the debug menu to comply with local regulations.
 
 ## Game Description
 
@@ -30,9 +30,9 @@ Embark on a text-based adventure in and around the iconic CN Tower in Toronto! E
 *   **Choice-Driven Narrative:** Make decisions that impact the storyline.
 *   **Multiple Endings:** Experience different outcomes based on your choices.
 *   **Save/Load Functionality:** Save your progress and resume your adventure later.
-*   **Debug Menu:** Access a hidden debug menu to test the game or adjust settings.
-*   **Optional LGBTQ+ Mode:** Enhance your experience with inclusive dialogue and interactions in regions where it's permitted.
-*   **Country-Based Restrictions:** Certain features are automatically disabled based on the player's detected country, in compliance with local regulations.
+*   **Debug Menu:** Access a hidden debug menu to test the game or adjust settings (use with caution!).
+*   **Optional Sweet+ Mode:** Enhance your experience with inclusive dialogue and interactions in regions where it's permitted.
+*   **Country-Based Restrictions:** Certain features are automatically disabled based on the player's detected country to comply with local regulations.
 
 ## Getting Started
 
@@ -70,10 +70,10 @@ Embark on a text-based adventure in and around the iconic CN Tower in Toronto! E
     cd CN-Tower
     ```
 
-2. Run the `main.py` script:
+2. Run the `maine.py` script:
 
     ```bash
-    python main.py
+    python maine.py
     ```
 
 ## Gameplay Instructions
@@ -89,7 +89,7 @@ Embark on a text-based adventure in and around the iconic CN Tower in Toronto! E
 
 ## Playing in Restricted Regions
 
-If you are in a country where LGBTQ+ content is restricted, the game will automatically disable the sweet+ mode and remove the option from the debug menu.
+If you are in a country where LGBTQ+ content is restricted, the game will automatically disable the sweet+ mode and remove the option from the debug menu. Some dialogue and interactions might be adjusted accordingly.
 
 ## Contributing
 
