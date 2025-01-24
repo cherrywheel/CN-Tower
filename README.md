@@ -70,10 +70,10 @@ Embark on a text-based adventure in and around the iconic CN Tower in Toronto! E
     cd CN-Tower
     ```
 
-2. Run the `maine.py` script:
+2. Run the `main.py` script:
 
     ```bash
-    python maine.py
+    python main.py
     ```
 
 ## Gameplay Instructions
