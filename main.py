@@ -1,13 +1,14 @@
 import time  # Used for pausing the game with time.sleep()
 import os  # Used for clearing the console with os.system('cls' or 'clear')
 import random  # Used for shuffling lists (e.g., support_options in display_location)
-import json  # Used for loading and saving JSON data (e.g., load_dialogue, load_banned_countries, save_game, load_game)
+import json  # Used for loading and saving JSON data (e.g., load_dialogue, save_game, load_game)
 import platform  # Used for detecting the operating system (e.g., in install_library, clear_console)
-import requests  # Used for making HTTP requests (e.g., in load_cn_tower_art, load_dialogue, load_banned_countries, get_user_country)
+import requests  # Used for making HTTP requests (e.g., in load_cn_tower_art, load_dialogue, get_user_country)
 import subprocess  # Used for running shell commands (e.g., in install_library to run pip or pip3)
 from art import text2art  # Used for generating ASCII art (in main to display "CN Tower")
 
 # GitHub Repository Details
+# Replace 'cherrywheel' with your actual GitHub username if it's different
 GITHUB_USERNAME = "cherrywheel"
 GITHUB_REPO = "CN-Tower"
 DIALOGUE_URL = f"https://raw.githubusercontent.com/{GITHUB_USERNAME}/{GITHUB_REPO}/main/dialogue.json"  # URL to fetch dialogue data from GitHub
@@ -135,7 +136,7 @@ def save_game(location, inventory, filename="savegame.json"):
         filename (str, optional): The name of the save file. Defaults to "savegame.json".
     """
     try:
-        with open(filename, "w") as f:
+        with open(filename, "w", encoding="utf-8") as f:  # Specify encoding as UTF-8
             json.dump({"location": location, "inventory": inventory}, f)  # Save location and inventory to JSON file
         print("Game saved.")
     except Exception as e:
@@ -151,7 +152,7 @@ def load_game(filename="savegame.json"):
         tuple: The loaded location and inventory, or ("base", {"money": 40}) if no save file is found or an error occurs.
     """
     try:
-        with open(filename, "r") as f:
+        with open(filename, "r", encoding="utf-8") as f:  # Specify encoding as UTF-8
             data = json.load(f)  # Load location and inventory from JSON file
         print("Game loaded.")
         return data["location"], data["inventory"]  # Return the loaded location and inventory
@@ -192,30 +193,25 @@ def get_user_country():
     ]
     for api_url in apis:
         try:
-            response = requests.get(api_url)
-            response.raise_for_status()  # Raise HTTPError for bad responses (4xx or 5xx)
+            response = requests.get(api_url, timeout=5) # Added 5 second timeout
+            response.raise_for_status()
 
-            # Check for rate-limiting specifically (429 error)
             if response.status_code == 429:
                 print(f"Rate limited by {api_url}, trying another API...")
-                continue  # Try the next API in the list
+                continue
 
             data = response.json()
 
-            # Extract country name based on API response format
-            if "country_name" in data:  # ipapi.co format
+            if "country_name" in data:
                 return data.get("country_name", "")
-            elif "country" in data:  # ipwho.is format
+            elif "country" in data:
                 return data.get("country", "")
             else:
                 print(f"Unexpected response format from {api_url}")
-                # Don't return None yet, try other APIs
 
         except requests.exceptions.RequestException as e:
             print(f"Error with {api_url} (RequestException): {e}")
-            # changed the error message so that it tells you that an error has occurred, but does not display the error itself (Error 429 will not be displayed)
 
-    # If all APIs fail, try to get the country from the timezone
     print("Could not determine country from APIs. Trying timezone...")
     try:
         import pytz
@@ -224,15 +220,14 @@ def get_user_country():
         local_timezone = datetime.now().astimezone().tzinfo
         country_code = pytz.country_timezones.get(str(local_timezone))
         if country_code:
-            # Use pytz.country_names to get the full country name from the code
-            return pytz.country_names.get(country_code[0].upper())  # Get full country name
+            return pytz.country_names.get(country_code[0].upper())
     except ImportError:
         print("Missing library: pytz. Please install it (pip install pytz)")
     except Exception as e:
         print(f"Error getting country from timezone: {e}")
 
     print("Could not determine user's country.")
-    return None  # Return None only after all attempts have failed
+    return None
 
 def is_country_banned(user_country, banned_countries):
     """Checks if the user's country is in the banned list.
@@ -244,7 +239,7 @@ def is_country_banned(user_country, banned_countries):
     Returns:
         bool: True if the user's country is banned, False otherwise.
     """
-    return user_country in banned_countries  # Check if the user's country is in the banned list
+    return user_country in banned_countries
 
 def sweet_dialogue(text, location, sweet_mode, dialogue_data):
     """Modifies dialogue based on sweet+ mode and location using loaded dialogue data.
@@ -284,7 +279,7 @@ def display_debug_menu(inventory, sweet_mode, is_restricted):
         print("4. Set Location")
         print("5. View Inventory")
         print("6. Exit Debug Menu")
-        if not is_restricted:  # Only show the sweet+ mode option if not restricted
+        if not is_restricted:
             print("7. Toggle Sweet+ Mode")
 
         choice = input("Enter choice: ")
@@ -307,13 +302,13 @@ def display_debug_menu(inventory, sweet_mode, is_restricted):
             print(f"{item} removed from inventory.")
         elif choice == "4":
             location = input("Enter the location to set: ")
-            return location, inventory, sweet_mode  # Sweet mode updated here
+            return location, inventory, sweet_mode
         elif choice == "5":
             display_inventory(inventory)
         elif choice == "6":
             print("Exiting debug menu...")
-            return None, inventory, sweet_mode  # Return None to indicate no location change
-        elif choice == "7" and not is_restricted:  # Only allow toggling if not restricted
+            return None, inventory, sweet_mode
+        elif choice == "7" and not is_restricted:
             sweet_mode = not sweet_mode
             print(f"sweet+ Mode {'enabled' if sweet_mode else 'disabled'}")
         else:
@@ -339,7 +334,6 @@ def display_location(location, inventory, sweet_mode, dialogue_data):
         text = "Entrance is North. Gift shop is East."
         text = sweet_dialogue(text, "base", sweet_mode, dialogue_data)
         print(text)
-        # Check for unmet character interactions and display appropriate messages
         if not inventory.get("met_alex", False):
             text = "You see a person who looks like they want to talk (West)."
             text = sweet_dialogue(text, "base", sweet_mode, dialogue_data)
@@ -352,7 +346,6 @@ def display_location(location, inventory, sweet_mode, dialogue_data):
             text = "You see a strange guy, he looks like a club member (West)"
             text = sweet_dialogue(text, "base", sweet_mode, dialogue_data)
             print(text)
-        # Display available actions
         text = "What do you want to do?"
         text = sweet_dialogue(text, "base", sweet_mode, dialogue_data)
         print(text)
@@ -376,7 +369,6 @@ def display_location(location, inventory, sweet_mode, dialogue_data):
             text = "Alex talks a lot about the weather, the view, and their love for the CN Tower."
             text = sweet_dialogue(text, "alex_rivers", sweet_mode, dialogue_data)
             print(text)
-            # Simulate conversation with Alex
             for i in range(5):
                 text = f"...blah, blah, blah! ({5 - i} minutes)"
                 text = sweet_dialogue(text, "alex_rivers", sweet_mode, dialogue_data)
@@ -396,7 +388,6 @@ def display_location(location, inventory, sweet_mode, dialogue_data):
             text = sweet_dialogue(text, "alex_rivers", sweet_mode, dialogue_data)
             print(text)
             inventory["met_alex"] = True
-            # Check if the player has a ticket after interaction
             if not has_item(inventory, "ticket"):
                 text = "Also, you don't have much time, so you didn't buy a ticket."
                 text = sweet_dialogue(text, "alex_rivers", sweet_mode, dialogue_data)
@@ -835,6 +826,7 @@ def process_command(command, current_location, inventory, sweet_mode, dialogue_d
         inventory (dict): The player's inventory.
         sweet_mode (bool): Whether sweet+ mode is enabled.
         dialogue_data (dict): The loaded dialogue data.
+        is_restricted (bool): Whether the user is in a restricted country.
 
     Returns:
         tuple: The new location, updated inventory, and sweet_mode.
@@ -881,8 +873,8 @@ def process_command(command, current_location, inventory, sweet_mode, dialogue_d
             new_location = "restart"
         elif command == "debug":
             new_location, inventory, sweet_mode = display_debug_menu(inventory, sweet_mode, is_restricted)
-        if new_location:  # Check if a new location was set in the debug menu
-             return new_location, inventory, sweet_mode
+            if new_location:
+                return new_location, inventory, sweet_mode
         elif command == "save":
             save_game(current_location, inventory)
         elif command == "load":
@@ -1398,7 +1390,6 @@ def main():
     """Main game loop."""
     check_libraries()  # Check for and install missing libraries
     dialogue_data = load_dialogue()  # Load dialogue data from GitHub
-    # banned_countries = load_banned_countries()  # Remove this line (no longer needed)
     sweet_mode = False  # Initialize sweet+ mode to off
     is_restricted = False  # Initialize is_restricted to False
 
@@ -1418,7 +1409,7 @@ def main():
 
     if user_country:
         print(f"Detected user country: {user_country}")  # Display detected country
-        if user_country in RESTRICTED_COUNTRIES:  # Check against the hardcoded list
+        if user_country in RESTRICTED_COUNTRIES:
             print("Some game features are not available in your country.")
             is_restricted = True  # Set the is_restricted flag to True
             sweet_mode = False  # Ensure sweet+ mode is disabled
