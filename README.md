@@ -8,7 +8,7 @@ Any resemblance to real persons, living or deceased, or actual events, locations
 
 ## Age Restriction
 
-This game is intended for players aged **16 and above**. By playing this game, you confirm that you meet the age requirement, But i will make a version for Peoples who under restrictions
+This game is intended for players aged **16 and above**. By playing this game, you confirm that you meet the age requirement.
 
 ## Sweet+ Mode (Optional LGBTQ+ Mode)
 
@@ -89,7 +89,7 @@ Embark on a text-based adventure in and around the iconic CN Tower in Toronto! E
 
 ## Playing in Restricted Regions
 
-If you are in a country where LGBTQ+ content is restricted, the game will automatically disable the sweet+ mode and remove the option from the debug menu. Some dialogue and interactions might be adjusted accordingly.
+If you are in a country where LGBTQ+ content is restricted, the game will automatically disable the Sweet+ mode and remove the option from the debug menu. Some dialogue and interactions might be adjusted accordingly.
 
 ## Contributing
 
