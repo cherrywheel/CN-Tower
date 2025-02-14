@@ -8,13 +8,13 @@ Any resemblance to real persons, living or deceased, or actual events, locations
 
 ## Age Restriction
 
-This game is intended for players aged **16 and above**. By playing this game, you confirm that you meet the age requirement.
+This game is intended for players aged **16 and above**. By playing this game, you confirm that you meet the age requirement, But i will make a version for Peoples above 16
 
 ## Sweet+ Mode (Optional LGBTQ+ Mode)
 
 The game includes an optional "sweet+" mode (referred to as such in the code), which provides an alternative, more inclusive tone to the game's dialogue. This mode is designed to be humorous and is available in regions where such content is legally permitted. It can be toggled on or off in the debug menu.
 
-**Please note:** In countries where this content might be restricted, the "sweet+" mode is automatically disabled and removed from the debug menu to comply with local regulations.
+**Please note:** In countries where this content might be restricted, the "Sweet+" mode is automatically disabled and removed from the debug menu to comply with local regulations.
 
 ## Game Description
 
