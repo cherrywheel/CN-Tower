@@ -8,7 +8,7 @@ Any resemblance to real persons, living or deceased, or actual events, locations
 
 ## Age Restriction
 
-This game is intended for players aged **16 and above**. By playing this game, you confirm that you meet the age requirement, But i will make a version for Peoples above 16
+This game is intended for players aged **16 and above**. By playing this game, you confirm that you meet the age requirement, But i will make a version for Peoples who under restrictions
 
 ## Sweet+ Mode (Optional LGBTQ+ Mode)
 
