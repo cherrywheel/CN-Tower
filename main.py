@@ -6,6 +6,7 @@ import platform  # Used for detecting the operating system (e.g., in install_lib
 import requests  # Used for making HTTP requests (e.g., in load_cn_tower_art, load_dialogue, get_user_country)
 import subprocess  # Used for running shell commands (e.g., in install_library to run pip or pip3)
 from art import text2art  # Used for generating ASCII art (in main to display "CN Tower")
+from prompt_toolkit import PromptSession  # Used for creating a session with command history support
 
 # GitHub Repository Details
 # Replace 'cherrywheel' with your actual GitHub username if it's different
@@ -79,10 +80,13 @@ def display_cn_tower_art(art):
     else:
         print("Could not load CN Tower art.")
 
+# Создаем сессию глобально для сохранения истории
+session = PromptSession()
+
 def get_player_input():
-    """Gets player input without command history support."""
+    """Получает ввод от пользователя с поддержкой истории команд."""
     try:
-        return input("> ").lower()
+        return session.prompt("> ").lower()
     except EOFError:
         return "exit"
 
