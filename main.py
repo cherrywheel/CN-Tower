@@ -80,12 +80,11 @@ def display_cn_tower_art(art):
         print("Could not load CN Tower art.")
 
 def get_player_input():
-    """Gets player input and converts it to lowercase.
-
-    Returns:
-        str: The player's input in lowercase.
-    """
-    return input("> ").lower()  # Get input, convert to lowercase, and return
+    """Gets player input without command history support."""
+    try:
+        return input("> ").lower()
+    except EOFError:
+        return "exit"
 
 def has_item(inventory, item):
     """Checks if an item exists in the inventory.
@@ -177,29 +176,37 @@ def load_dialogue():
         print(f"Error loading dialogue: {e}")
         return {}  # Return an empty dictionary if loading fails
 
+rate_limited_apis = {}
+
 def get_user_country():
     """Detects the user's country using multiple external APIs without API keys.
-
-    Cycles through different APIs if a 429 (Too Many Requests) error is encountered.
-    If all APIs fail, attempts to get the country from the system's timezone.
-
+    
+    If an API returns 429 (Too Many Requests), it is blocked for 5 minutes.
+    After 5 minutes, that API is retried.
+    
     Returns:
-        str: The user's country name, or None if it could not be determined.
+        str: The detected country name, or None if not determined.
     """
     apis = [
         "https://ipapi.co/json/",
         "https://ipwho.is/",
         "https://freegeoip.app/json/"
     ]
+    now = time.time()
     for api_url in apis:
+        # Skip API if it's still rate-limited
+        if api_url in rate_limited_apis and now < rate_limited_apis[api_url]:
+            continue
+
         try:
-            response = requests.get(api_url, timeout=5) # Added 5 second timeout
-            response.raise_for_status()
+            response = requests.get(api_url, timeout=5)  # 5-second timeout
 
             if response.status_code == 429:
-                print(f"Rate limited by {api_url}, trying another API...")
+                # Block the API for 5 minutes without printing a notification
+                rate_limited_apis[api_url] = now + 5 * 60
                 continue
 
+            response.raise_for_status()
             data = response.json()
 
             if "country_name" in data:
@@ -1386,6 +1393,28 @@ def process_command(command, current_location, inventory, sweet_mode, dialogue_d
 
     return new_location, inventory, sweet_mode  # Return the updated location, inventory, and sweet_mode
 
+def save_age(age, filename=None):
+    """Automatically saves the player's age to a file in the same folder as main.py."""
+    if filename is None:
+        filename = os.path.join(os.path.dirname(__file__), "age.json")
+    try:
+        with open(filename, "w", encoding="utf-8") as f:
+            json.dump({"age": age}, f)
+        print("Age saved automatically.")
+    except Exception as e:
+        print(f"Error saving age: {e}")
+
+def load_age(filename=None):
+    """Loads the player's age from a file in the same folder as main.py if it exists."""
+    if filename is None:
+        filename = os.path.join(os.path.dirname(__file__), "age.json")
+    try:
+        with open(filename, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        return data.get("age")
+    except Exception:
+        return None
+
 def main():
     """Main game loop."""
     check_libraries()  # Check for and install missing libraries
@@ -1414,24 +1443,30 @@ def main():
             is_restricted = True  # Set the is_restricted flag to True
             sweet_mode = False  # Ensure sweet+ mode is disabled
         else:
-            print("Game is available in your country. Enjoy!")  # Display availability message
+            print("All in-game content is available in your country. Enjoy!")  # Display availability message
     else:
         print("Could not determine user country. Proceeding with caution.")
         user_country = "Unknown"  # Set a default value
 
-    while True:
-        # Age verification (only ask if the country is not banned)
+    # Try to load the saved age automatically
+    age = load_age()
+    if age is None:
+        # Age verification loop
         while True:
             try:
                 age = int(input(f"Enter your age (in {user_country}): "))
                 if age >= 16:
-                    break  # Continue if age is 16 or older
+                    save_age(age)  # Automatically save age after valid input
+                    break
                 else:
                     print("Sorry, you must be 16 or older to play this game.")
-                    return  # Exit if under 16
+                    return
             except ValueError:
                 print("Invalid input. Please enter a number.")
+    else:
+        print(f"Welcome back! Your age ({age}) was loaded automatically.")
 
+    while True:
         current_location = "base"
         inventory = {"money": 40}  # Start with some money
 
