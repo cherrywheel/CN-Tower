@@ -80,11 +80,11 @@ def display_cn_tower_art(art):
     else:
         print("Could not load CN Tower art.")
 
-# Создаем сессию глобально для сохранения истории
+# Create a global session to preserve command history
 session = PromptSession()
 
 def get_player_input():
-    """Получает ввод от пользователя с поддержкой истории команд."""
+    """Gets input from the user with command history support."""
     try:
         return session.prompt("> ").lower()
     except EOFError:
