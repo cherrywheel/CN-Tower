@@ -39,7 +39,7 @@ Embark on a text-based adventure in and around the iconic CN Tower in Toronto! E
 ### Prerequisites
 
 *   Python 3.x installed on your system.
-*   Required Libraries: `requests`, `art`, `pytz`
+*   Required Libraries: `requests`, `art`, `pytz`, `prompt_toolkit`
 
 ### Installation
 
