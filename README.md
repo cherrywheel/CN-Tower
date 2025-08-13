@@ -93,9 +93,4 @@ If you are in a country where LGBTQ+ content is restricted, the game will automa
 
 ## Contributing
 
-Contributions are welcome! If you'd like to contribute to the game, please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix.
-3. Make your changes and test thoroughly.
-4. Submit a pull request.
+WTFPL )
