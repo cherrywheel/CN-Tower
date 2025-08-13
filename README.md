@@ -2,7 +2,7 @@
 
 ## Disclaimer
 
-This game is a work of fiction created solely for entertainment purposes. The characters, events, and settings depicted in this game, including references to the CN Tower, "Quadrobers," and "Patrick" are entirely fictional.
+This game is a work of fiction created solely for entertainment purposes. The characters, events, and settings depicted in this game, including references to the CN Tower, "Quadrobers," and "Patrick" are entirely fictional. I made it for fun and they have a lot of errors!
 
 Any resemblance to real persons, living or deceased, or actual events, locations, or entities is purely coincidental. The developer does not intend to offend, harm, or misrepresent any individuals, groups, or organizations.
 
